@@ -71,7 +71,7 @@
     border: none;
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: "Fraunces", serif;
     border-radius: 3rem;
     font-weight: 700;
@@ -101,7 +101,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10rem 0; }
+    padding: -5rem 0; }
     .footer__content h2 {
       font-size: 3rem;
       font-family: "Fraunces", serif;
@@ -240,13 +240,13 @@
         grid-row: 18 / 22; } }
     @media screen and (max-width: 29.9em) {
       .section-about-pics-4 {
-        padding-top: 35rem !important; } }
+        padding-top: 10rem !important; } }
   .section-about-pics-4, .section-about-pics-3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding:;
-    padding-top: 30rem;
+    padding-top: 20rem;
     align-items: center;
     text-align: center; }
     @media screen and (max-width: 29.9em) {
@@ -262,7 +262,7 @@
       font-family: "Fraunces", serif;
       font-weight: 900; }
   .section-about-pics-3 {
-    padding-top: 33rem; }
+    padding-top: 10rem; }
     .section-about-pics-3 h2 {
       color: #fceffd; }
     .section-about-pics-3 p {
@@ -291,10 +291,10 @@
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   padding-top: 15rem;}
 
-.bookstuff{height: 100vh; width: 100vw;
+.bookstuff{height: 100vh; width: 80vw;
 color: rgb(255, 224, 224); font-size: 25px; text-align: center; 
-font-style: normal; text-transform: none; padding-left: 110px; 
-padding-right: 110px; padding-top: 150px;
+font-style: normal; text-transform: none; padding-left: 10vw; 
+padding-right: 10vw; padding-top: 150px;
 line-height: 25px;}
 
 .test__head {
@@ -341,7 +341,7 @@ margin-left: auto; margin-right: auto;}
 
     
     .am-butts{display: flex; 
-      height: 160px; border: solid 1px yellow; justify-content: center; align-items: center;}
+      height: 160px; border: solid 1px white; justify-content: center; align-items: center;}
 
 
     .btn-btn-primary{width: 350px; height: 58px; color: #23303e; border: solid 1px rgb(106, 178, 245); border-radius: 10px; 
