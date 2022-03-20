@@ -1,99 +1,404 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.body { margin: 0; padding: 0; }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media (min-width: 85.87em) {
+    html {
+      font-size: 72%; } }
+  @media screen and (max-width: 61.9em) {
+    html {
+      font-size: 55%; } }
+  @media screen and (max-width: 47.9em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 29.9em) {
+    html {
+      font-size: 45%; } }
 
+.container {
+  display: grid;
+  grid-template-rows: 90vh min-content min-content min-content;
+  grid-template-columns: minmax(8rem, 1fr) repeat(8, minmax(min-content, 15rem)) minmax(8rem, 1fr); }
+  @media screen and (max-width: 61.9em) {
+    .container {
+      grid-template-rows: 90vh 450vh min-content min-content; } }
 
-.container{width: 100vw; height: 100vh; border: solid 1px black;
-     background-image: url("WestBayCrop.jpg"); background-repeat: no-repeat; background-size: 100%;}
+.header {
+  background: url(WestBayCrop.jpg) no-repeat center center/cover;
+  grid-column: 1 / -1; }
+  .header__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0; }
+  .header__head {
+    font-size: 5rem;
+    letter-spacing: 8px;
+    text-transform: none;
+    color: white;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 9rem; }
+    @media screen and (max-width: 61.9em) {
+      .header__head {
+        padding-top: 5rem; } }
+  .header__image {
+    height: 8rem;
+    width: 2.5rem; }
 
-.button-strip{display: flex;}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem; }
+  .nav__logo {
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer; }
+  .nav__listitems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    @media screen and (max-width: 61.9em) {
+      .nav__listitems {
+        display: none; } }
+  .nav__items {
+    padding: 0 3rem;
+    color: white;
+    cursor: pointer; }
+  .contact__btn {
+    text-decoration: none;
+    color: white;
+  }
+  .nav__btn {
+    padding: 1rem 2rem;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    border-radius: 3rem;
+    font-weight: 700;
+    cursor: pointer; }
+    .nav__btn:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: white; }
 
-.squar {height: 23px; width: 70px; border: solid 2px rgba(248, 208, 208, 0.411); margin-left: 20px;margin-right: 10px; margin-top: 20px; 
-    border-radius: 5px; color: antiquewhite; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-  font-size: 10px; text-align: center; padding-top: 7px; cursor: pointer;}
-.contact_btn {height: 23px; width: 70px; border: solid 2px rgba(248, 208, 208, 0.411); margin-left: 20px;margin-right: 10px; margin-top: 20px; 
-  border-radius: 5px; color: antiquewhite; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-font-size: 10px; text-align: center; padding-top: 7px; cursor: pointer;}
+.footer {
+  background-color: rgba(69, 140, 126, 0.644);
+  grid-column: 1 / -1; }
+  .footer__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20vw; }
+    .footer__gallery:nth-child(1) {
+      grid-column: 1 / 2; }
+    .footer__gallery:nth-child(3) {
+      grid-column: 6 / 8; }
+  .footer__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .footer__content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0; }
+    .footer__content h2 {
+      font-size: 3rem;
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      color: #d7fff6; }
+    .footer__content ul {
+      padding: 5rem 0;
+      list-style: none;
+      font-size: 1.7rem;
+      font-family: "Barlow", sans-serif;
+      display: flex; }
+      .footer__content ul li {
+        padding: 0 3rem;
+        color: #e9fffa;
+        transition: color 200ms;
+        cursor: pointer; }
+        .footer__content ul li:hover {
+          color: white; }
+  .footer__icons ul {
+    display: flex; }
+    .footer__icons ul li {
+      padding: 0 1.7rem; }
 
-.name{height: auto; border: solid 1px black;
-color: rgb(247, 231, 231); font-family: 'Times New Roman', Times, serif; font-size: 50px; text-align: center;
-padding: 15vh 35vw 15vh 35vw
-}
+#lol {
+  fill: #2c7566;
+  transition: all 200ms; }
+  #lol:hover {
+    fill: white; }
 
-.mid-bit{display: flex;}
+.section-about {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  object-fit: cover; }
+  @media screen and (max-width: 61.9em) {
+    .section-about {
+      grid-template-rows: repeat(21, 1fr); } }
+  .section-about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 15rem; }
+    .section-about-content h2 {
+      font-size: 55px;
+      padding-top: 60px;
+      padding-bottom: 20px;
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      color: #093f79; }
+    .section-about-content p {
+      font-size: 35px;
+      padding: 3rem 0;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      font-family: "Barlow", sans-serif;
+      line-height: 1.6;
+      color: #10239e; }
+    .section-about-content a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-family: "Fraunces", serif;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 30; }
+      .section-about-content a::before {
+        content: "";
+        position: absolute;
+        top: 1.4rem;
+        left: 0;
+        background-color: rgba(254, 120, 103, 0.3);
+        border-radius: 2rem;
+        transition: all 200ms;
+        width: 15rem;
+        height: 1rem; }
+      .section-about-content a:hover::before {
+        background-color: #fe7867;
+        z-index: -1; }
+  .section-about-pics-1 {
+    grid-column: 5 / 9;
+    grid-row: 1 / 5;
+    background: url(MeandBear.jpg) no-repeat center center/cover;}
+    @media screen and (max-width: 61.9em) {
+      .section-about-pics-1 {
+        grid-column: 1 / -1;
+        grid-row: 1 / 4;
+        width: 100%; } }
+  .section-about-content-1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5; }
+    @media screen and (max-width: 61.9em) {
+      .section-about-content-1 {
+        grid-row: 4 / 7;
+        grid-column: 1 / -1; } }
+    @media screen and (max-width: 29.9em) {
+      .section-about-content-1 {
+        padding: 0 7rem; } }
+  .section-about-pics-2 {
+    grid-column: 1 / 5;
+    grid-row: 5 / 10;
+    background: url(MushtoMagic3.png) no-repeat center center/cover; }
+    @media screen and (max-width: 61.9em) {
+      .section-about-pics-2 {
+        grid-column: 1 / -1;
+        grid-row: 7 / 11; } }
+  .section-about-content-2 {
+    grid-column: 5 / 9;
+    grid-row: 5 / 10; }
+    @media screen and (max-width: 61.9em) {
+      .section-about-content-2 {
+        grid-column: 1 / -1;
+        grid-row: 11 / 14; } }
+    @media screen and (max-width: 29.9em) {
+      .section-about-content-2 {
+        padding: 0 7rem; } }
+  .section-about-pics-3 {
+    grid-column: 1 / 5;
+    grid-row: 10 / 15;
+    background: url(wallnextdoor.jpg) no-repeat center/cover; }
+    @media screen and (max-width: 61.9em) {
+      .section-about-pics-3 {
+        grid-column: 1 / -1;
+        grid-row: 14 / 18; } }
+  .section-about-pics {
+    width: 100%; }
+  .section-about-pics-4 {
+    grid-column: 5 / 9;
+    grid-row: 10 / 15;
+    background: url(poppies.jpg) no-repeat center center/cover; }
+    @media screen and (max-width: 61.9em) {
+      .section-about-pics-4 {
+        grid-column: 1 / -1;
+        grid-row: 18 / 22; } }
+    @media screen and (max-width: 29.9em) {
+      .section-about-pics-4 {
+        padding-top: 35rem !important; } }
+  .section-about-pics-4, .section-about-pics-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 19rem;
+    padding-top: 30rem;
+    align-items: center;
+    text-align: center; }
+    @media screen and (max-width: 29.9em) {
+      .section-about-pics-4, .section-about-pics-3 {
+        padding: 0 7rem; } }
+    .section-about-pics-4 p, .section-about-pics-3 p {
+      padding: 2rem 0;
+      font-size: 40px;
+      line-height: 40px;
+      font-family: "Barlow", sans-serif; }
+    .section-about-pics-4 h2, .section-about-pics-3 h2 {
+      font-size: 65px;
+      font-family: "Fraunces", serif;
+      font-weight: 900; }
+  .section-about-pics-3 {
+    padding-top: 33rem; }
+    .section-about-pics-3 h2 {
+      color: #fceffd; }
+    .section-about-pics-3 p {
+      color: #fbecfc; }
+  .section-about-pics-4 h2 {
+    color: #fbecfc; }
+  .section-about-pics-4 p {
+    color: #fbecfc; }
+  .section-about-content-1 a::before {
+    content: "";
+    position: absolute;
+    top: 1.4rem;
+    left: 0;
+    background-color: rgba(212, 196, 101, 0.3) !important;
+    border-radius: 2rem;
+    transition: all 200ms;
+    width: 15rem;
+    height: 1rem; }
+  .section-about-content-1 a:hover::before {
+    background-color: #fad400 !important;
+    z-index: -1; }
 
-.about-dom{width: 50vw; height: 700px; border: solid 1px black;}
+.section-testimonials {
+  grid-column: 2 / -2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  padding-top: 15rem;}
 
-.text-about-dom-head{width: auto; height: auto; border: solid 1px black; 
-    color: rgba(89, 89, 179, 0.897); font-size: 70px; font-family: "Fraunces" serif; padding: 50px; text-align: center; padding-top: 70px;}
+.bookstuff{height: 100vh; width: 100vw;
+color: rgb(255, 224, 224); font-size: 45px; text-align: center; 
+font-style: normal; text-transform: none; padding-left: 110px; 
+padding-right: 110px; padding-top: 150px;
+line-height: 55px;}
 
+.test__head {
+  grid-column: 1/ 12;
+  height: 150vh;
+  letter-spacing: 3px;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Fraunces", serif; 
+  background-image: url("Stars_and_Mouse.png"); 
+  background-repeat: no-repeat; background-size: 100%; background-position: left;
+  color: #f5c7e6;
+  text-transform: uppercase; padding-top: 29vh;}
 
-.text-about-dom-story{width: auto; height: auto; border: solid 1px black; 
-color: rgba(89, 89, 179, 0.897); font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;}
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+margin-left: auto; margin-right: auto;}
+  .user__img {
+    height: 7rem;
+    border-radius: 50%; }
+  .user__para {
+    font-size: 30px;
+    font-family: "Barlow", sans-serif;
+    padding: 25px;
+    line-height: 1.6;
+    text-align: center;
+    color: #818498; }
+  .user__head {
+    font-size: 4rem;
+    font-family: "Fraunces", serif;
+    font-weight: 900; text-align: center;
+    color: #23303e; }
+  .user h6 {
+    font-family: "Barlow", sans-serif;
+    font-size: 3rem;
+    color: #a7abae;
+    padding: 2rem 0; }
 
-.btn-1{padding-top: 5px; position: relative; top: 70px; left: 300px;
-    background-color: rgba(95, 158, 160, 0.486); border: solid 1px rgba(98, 202, 202, 0.5); border-radius: 5px; 
-color: aliceblue; font-size: 25px;font-family: 'Times New Roman', Times, serif; text-align: center; cursor: pointer;}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #458c7e;
+  display: none;
+  transform: translateX(100%);
+  transition: all 300ms; }
+  .sidebar.open {
+    transform: translateX(0); }
+  @media screen and (max-width: 61.9em) {
+    .sidebar {
+      display: block; } }
+  .sidebar__btn {
+    position: fixed;
+    top: 3rem;
+    right: 3rem; }
+  .sidebar ul {
+    list-style: none;
+    height: 100vh;
+    padding-top: 12rem; }
+    .sidebar ul li {
+      padding: 3rem 0;
+      color: white;
+      font-size: 1.7rem;
+      font-family: "Barlow", sans-serif;
+      text-align: center;
+      transition: all 200ms;
+      cursor: pointer; }
+      .sidebar ul li:hover {
+        transform: scale(1.1); }
 
+#open {
+  transition: all 300ms; }
+  #open.show {
+    fill: black; }
 
-.pic-dom{width: 50vw; height: 700px; border: solid 1px black; background-image: url("MeandnoBear.jpg"); 
-    background-repeat: no-repeat; background-size: 105%;}
+.openbar {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  display: none; }
+  @media screen and (max-width: 61.9em) {
+    .openbar {
+      display: block; } }
 
-    .mid-bit-2{display: flex; margin: 0;}
-    .mid-bit2-pic{width: 50vw; height: 700px; border: solid 1px black; background-image: url("MushtoMagic4.png"); 
-        background-repeat: no-repeat; background-size: 100%;}
-
-        .mid-bit-2-about{width: 50vw; height: 700px; border: solid 1px black;}
-        .mid-bit-2-header{width: auto; height: auto; border: solid 1px black; 
-            color: rgb(110, 110, 240); font-size: 70px; font-family: "Fraunces" serif; padding: 60px; text-align: center;}
-        .mid-bit-2-body{width: auto; height: auto; border: solid 1px black; 
-            color: rgb(113, 113, 243); font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-            text-align: center; padding-top: 20px;}
-
-      .mid-bit-3{display: flex; margin: 0;}
-
-      .mid-bit3A{width: 50vw; height: 700px; border: solid 1px black; background-image: url("wallnextdoor.jpg"); 
-        background-repeat: no-repeat; background-size: 100%;}
-      .mid-bit3B{width: 50vw; height: 700px; border: solid 1px black; background-image: url("Squarepoppies.jpg");
-      background-repeat: no-repeat; background-size: 100%;}
-
-      .mid-3-head{width: auto; height: auto; border: solid 1px black; 
-        color: rgb(255, 255, 255); font-size: 70px; font-family: "Fraunces" serif; padding: 60px; text-align: center;}
-        .mid-3-body{ width: auto; height: auto; border: solid 1px black; 
-            color: rgb(255, 255, 255); font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-            text-align: center; padding-top: 20px; margin-top: 50px;}
-
-
-            .mid-3B-head{width: auto; height: auto; border: solid 1px black; 
-              color: rgb(143, 5, 5); font-size: 70px; font-family: "Fraunces" serif; padding-top: 80px; text-align: center;}
-            .mid-3B-body{width: auto; height: auto; border: solid 1px black; 
-              color: rgb(255, 255, 255); font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-              text-align: center; padding-top: 300px;}
-
-.spacer{width: 100vw; height: 20px; background-color: aqua;}
-
-.Mouse{width: 100vw; height: 900px; background-image: url(Stars_and_Mouse.png); background-repeat: no-repeat; background-size: 100%;}
-
-.mouse-title{height: auto; border: solid 1px red; color: aqua; font-family: 'Times New Roman', Times, serif;
-font-size: 65px; padding-top: 15vh; text-align: center;}
-
-.mouse-body{ height: auto; border: solid 1px red; color: aqua; font-family: 'Times New Roman', Times, serif; 
-font-size: 30px; padding-top: 10vh; padding-left: 100px; padding-right: 100px; text-align: center;}
-
- .book-title{display: flex; padding-top: 30px;}
-
-
-      .am-butts{display: flex; 
-        height: 50px; border: solid 1px yellow; justify-content: center; align-items: center;}
-
-
-      .btn-btn-primary{width: 170px; height: 25px; color: #23303e; border: solid 1px rgb(106, 178, 245); border-radius: 4px; 
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center; 
-        font-size: 15px; padding-top: 5px; background-color: #b4d9f5; margin: 20px 170px 20px 170px;}
-
-
-        .footer{width: 100vw; height: 100vh; background-image: url("Earthsun.jpg"); background-repeat: no-repeat; background-size: 100%;}
-
-
-        .foot-copy {width: 800px; height: 200px; border: solid 1px snow; color: #b4d9f5; font-family: 'Lucida Sans';
-        text-align: center; font-size: 35px;
-        padding-top: 450px; margin-left: 350px;}
+     
