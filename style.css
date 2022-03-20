@@ -306,7 +306,7 @@ html {
   padding-top: 15rem;}
 
 .bookstuff{height: 100vh; width: 100vw;
-color: rgb(255, 224, 224); font-size: 45px; text-align: center; 
+color: rgb(255, 224, 224); font-size: 25px; text-align: center; 
 font-style: normal; text-transform: none; padding-left: 110px; 
 padding-right: 110px; padding-top: 150px;
 line-height: 55px;}
@@ -346,7 +346,7 @@ margin-left: auto; margin-right: auto;}
     color: #23303e; }
   .user h6 {
     font-family: "Barlow", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #a7abae;
     padding: 2rem 0; }
 
