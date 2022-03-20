@@ -1,5 +1,5 @@
 
-body { margin: 0; padding: 0; }
+.body { margin: 0; padding: 0; }
 
 
 .container{width: 100vw; height: 100vh; border: solid 1px black;
@@ -81,33 +81,6 @@ font-size: 30px; padding-top: 10vh; padding-left: 100px; padding-right: 100px; t
 
  .book-title{display: flex; padding-top: 30px;}
 
- .user {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  margin-left: 0; margin-right: 0;}
-    .user__img {
-      height: 7rem;
-      border-radius: 50%; }
-    .user__para {
-      font-size: 15px;
-      font-family: "Barlow", sans-serif;
-      padding: 20px;
-      line-height: 1.6;
-      text-align: center;
-      color: #818498; }
-    .user__head { height: 130px; padding: 10px;
-      font-size: 45px; padding-top: 20px;
-      font-family: "Fraunces", serif;
-      font-weight: 900; text-align: center;
-      color: #23303e;  border: solid 1px red;}
-    .user h6 {
-      font-family: "Barlow", sans-serif;
-      font-size: 25px;
-      color: #a7abae;
-      padding-top: 1px;  padding: auto;
-      border: solid 1px red; }
 
       .am-butts{display: flex; 
         height: 50px; border: solid 1px yellow; justify-content: center; align-items: center;}
