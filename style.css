@@ -305,7 +305,7 @@ line-height: 25px;}
   text-align: center;
   font-family: "Fraunces", serif; 
   background-image: url("Stars_and_Mouse.png"); 
-  background-repeat: no-repeat; background-size: 100%; background-position: left;
+  background-repeat: no-repeat; background-size: 100vw; background-position: left;
   color: #f5c7e6;
   text-transform: uppercase; padding-top: 29vh;}
 
