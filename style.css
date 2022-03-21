@@ -81,16 +81,16 @@
       color: rgb(252, 132, 132); }
 
 .footer {
-  background-color: rgba(255, 255, 255, 0.644);
+  background-color: black;
   grid-column: 1 / -1; }
   .footer__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 20vw; }
     .footer__gallery:nth-child(1) {
-      grid-column: 1 / 2; }
+      grid-column: 1 / 1; }
     .footer__gallery:nth-child(3) {
-      grid-column: 6 / 8; }
+      grid-column: 6 / 8;}
   .footer__img {
     height: 100%;
     width: 100%;
@@ -100,13 +100,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: -5rem 0; }
+    flex-direction: column; }
     .footer__content h2 {
       font-size: 3rem;
       font-family: "Fraunces", serif;
       font-weight: 900;
-      color: #d7fff6; }
+      color: #d7fff6; 
+    position: relative; top: -6rem;}
     .footer__content ul {
       padding: 5rem 0;
       list-style: none;
@@ -114,7 +114,7 @@
       font-family: "Barlow", sans-serif;
       display: flex; }
       .footer__content ul li {
-        padding: 0 3rem;
+        padding: 3rem 2rem;
         color: #e9fffa;
         transition: color 200ms;
         cursor: pointer; }
@@ -123,7 +123,10 @@
   .footer__icons ul {
     display: flex; }
     .footer__icons ul li {
-      padding: 0 1.7rem; }
+      padding: 1.7rem; position: relative; top: -9rem;}
+
+.attribution{color: #e9fffa;}
+
 
 #lol {
   fill: #ffffff;
@@ -223,7 +226,7 @@
   .section-about-pics-3 {
     grid-column: 1 / 5;
     grid-row: 10 / 15;
-    background: url(wallnextdoor.jpg) no-repeat center/cover; }
+    background: url(wallnextdoorw.jpg) no-repeat center/cover; }
     @media screen and (max-width: 61.9em) {
       .section-about-pics-3 {
         grid-column: 1 / -1;
@@ -246,7 +249,7 @@
     justify-content: center;
     flex-direction: column;
     padding:;
-    padding-top: 20rem;
+    padding-top: 25rem;
     align-items: center;
     text-align: center; }
     @media screen and (max-width: 29.9em) {
